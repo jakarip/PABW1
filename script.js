@@ -21,15 +21,16 @@ function checkAvailability(){
             if (buku[i].nama === bukuSelect){
                 found = true;
                 if(parseInt(jumlahInput) > buku[i].jumlah){
-                    alert("Buku Tersedia")
+                    alert("Jumlah buku tidak tersedia")
                     return;
                 }
-                break;
+                alert("Silahkan ambil buku anda")
+                return;
             }
             
         }
         if (!found){
-            alert("Book not found.");
+            alert("Buku tidak ditemukan");
             return;
         }
     }
