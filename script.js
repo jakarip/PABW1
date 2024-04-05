@@ -20,6 +20,10 @@ function checkAvailability(){
         for (let i = 0; i < buku.length; i++) {
             if (buku[i].nama === bukuSelect){
                 found = true;
+                if(parseInt(jumlahInput) > buku[i].jumlah){
+                    alert("Buku Tersedia")
+                    return;
+                }
                 break;
             }
             
